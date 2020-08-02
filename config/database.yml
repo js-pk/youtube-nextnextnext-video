@@ -1,0 +1,16 @@
+---
+# This is a sample database file for the Kona ORM
+:development: &defaults
+  :database: nextnextnext
+  :username: root
+  :password: mysql_youtube_2020
+  :host: 127.0.0.1
+
+:test:
+  <<: *defaults
+  :database: sample_test
+
+:production:
+  <<: *defaults
+  :database: sample_production
+    
